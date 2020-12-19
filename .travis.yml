@@ -1,0 +1,9 @@
+language: shell
+
+os: windows
+
+before_script:
+  powershell -Command 'Set-ExecutionPolicy Unrestricted'
+
+script:
+  powershell -Command '.\Tests\Run.ps1'
